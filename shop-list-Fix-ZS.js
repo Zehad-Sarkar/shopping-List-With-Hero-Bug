@@ -12,6 +12,8 @@ function addItem() {
   const li = document.createElement("li");
   // li.innerHTML = addInput.value;
   li.innerHTML = addInput.value;
+  
+  //empty input field add validation
   if(addInput.value===''){
     return;
   }
@@ -28,6 +30,7 @@ function addItem() {
 function removeItem() {
   let li = document.querySelector("li:last-child");
  
+  //remove child epty validation
  if(li!==null){
   itemList.removeChild(li);
  }
